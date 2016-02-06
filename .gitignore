@@ -22,6 +22,8 @@ __pycache__/
 
 # Auto-collected static files folder
 /static/
+# Do not ignore web.config in static folder
+!/static/web.config
 
 # Windows image file caches
 Thumbs.db
