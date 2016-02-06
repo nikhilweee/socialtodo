@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
     # 'app',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
@@ -178,3 +179,9 @@ LOGGING = {
 
 # Specify the default test runner.
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
+AUTHENTICATION_BACKENDS = [
+    'social.backends.google.GoogleOAuth2',
+    'social.backends.google.GoogleOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+]
