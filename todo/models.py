@@ -12,3 +12,4 @@ class Todo(models.Model):
     assigned_by = models.ForeignKey('Person', related_name='todos_given')
     due_date = models.DateTimeField()
     date_created = models.DateTimeField(auto_now_add=True)
+    completed = models.BooleanField(default=False)
